@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Morse Code Translator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Morse Code Translator</h1>
+    <div class="input-box">
+      <label for="message">Enter a message:</label>
+      <input type="text" id="message" placeholder="Your message...">
+    </div>
+    <div class="buttons">
+      <button onclick="translateToMorse()">Translate to Morse Code</button>
+      <button onclick="sendMorseCode()">Send Morse Code</button>
+    </div>
+    <div class="result-box">
+      <h2>Morse Code:</h2>
+      <p id="morse-code"></p>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+
+</html>
